@@ -29,12 +29,16 @@ describe('Thermostat', function() {
   describe("the temperature", function(){
 
     it("can not go below 10 degrees", function(){
-      expect(thermostat.DecreaseTemperature(10)).toEqual(10);
+      expect(thermostat.DecreaseTemperature(10, "On")).toEqual(10);
     });
 
-    it("can not be above 25 with power save on", function(){
-      expect(thermostat.IncreaseTemperature(25)).toEqual(25);
+    it("can not go above 25 with power save on", function(){
+      expect(thermostat.IncreaseTemperature(25, "On")).toEqual(25);
     });
+
+    it("can not go above 32 with power save off", function(){
+      expect(thermostat.IncreaseTemperature(32, "Off")).toEqual(32);
+    })
 
   });
 
