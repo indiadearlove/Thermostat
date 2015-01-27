@@ -3,7 +3,6 @@ describe('Thermostat', function() {
   var thermostat;
   beforeEach(function(){
     thermostat = new Thermostat();
-    thermostat.DefaultTemperature();
   });
 
 
@@ -19,6 +18,10 @@ describe('Thermostat', function() {
 
     it("can increase the temperature", function(){
       expect(thermostat.IncreaseTemperature(20)).toEqual(21);
+    });
+
+    it("can decrease the temperature", function(){
+      expect(thermostat.DecreaseTemperature(20)).toEqual(19);
     });
 
   });

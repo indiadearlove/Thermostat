@@ -8,4 +8,8 @@ var Thermostat = function () {
     return (temp += 1);
   };
 
+  Thermostat.prototype.DecreaseTemperature = function(temp) {
+    return (temp -= 1);
+  };
+
 };
