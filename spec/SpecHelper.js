@@ -12,6 +12,10 @@ describe('Thermostat', function() {
       expect(thermostat.DefaultTemperature()).toEqual(20);
     });
 
+    it("starts with power saving mode on", function(){
+      expect(thermostat.DefaultPowerSave()).toEqual("On");
+    });
+
   });
 
   describe("there is a button", function(){
@@ -38,7 +42,7 @@ describe('Thermostat', function() {
 
     it("can not go above 32 with power save off", function(){
       expect(thermostat.IncreaseTemperature(32, "Off")).toEqual(32);
-    })
+    });
 
   });
 

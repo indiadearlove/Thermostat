@@ -4,6 +4,10 @@ var Thermostat = function () {
     return (temp = 20);
   };
 
+  Thermostat.prototype.DefaultPowerSave = function(powersave) {
+    return (powersave = "On")
+  };
+
   Thermostat.prototype.IncreaseTemperature = function(temp, powersave) {
     if (temp == 32) return temp;
     if (temp == 25 && powersave == "On") return temp;
