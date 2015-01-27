@@ -26,4 +26,12 @@ describe('Thermostat', function() {
 
   });
 
+  describe("the temperature", function(){
+
+    it("can not go below 10 degrees", function(){
+      expect(thermostat.DecreaseTemperature(10)).toEqual(10);
+    });
+
+  });
+
 });

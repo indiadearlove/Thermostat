@@ -9,6 +9,7 @@ var Thermostat = function () {
   };
 
   Thermostat.prototype.DecreaseTemperature = function(temp) {
+    if (temp == 10) return temp;
     return (temp -= 1);
   };
 
