@@ -5,6 +5,7 @@ var Thermostat = function () {
   };
 
   Thermostat.prototype.IncreaseTemperature = function(temp) {
+    if (temp == 25) return temp;
     return (temp += 1);
   };
 

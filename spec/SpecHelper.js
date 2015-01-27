@@ -32,6 +32,10 @@ describe('Thermostat', function() {
       expect(thermostat.DecreaseTemperature(10)).toEqual(10);
     });
 
+    it("can not be above 25 with power save on", function(){
+      expect(thermostat.IncreaseTemperature(25)).toEqual(25);
+    });
+
   });
 
 });
