@@ -11,9 +11,9 @@ var Thermostat = function () {
     return powersave;
   };
 
-  Thermostat.prototype.increaseTemperature = function(powersave) {
+  Thermostat.prototype.increaseTemperature = function() {
     if (temp == 32) return temp;
-    if (temp == 25 && powersave == "On") return temp;
+    if (temp > 24 && powersave == "On") return temp = 25;
     return (temp += 1);
   };
 
@@ -27,6 +27,11 @@ var Thermostat = function () {
   };
 
   Thermostat.prototype.powerSaveOff = function() {
+    return powersave = "Off";
+  };
+
+  Thermostat.prototype.changePowerSave = function() {
+    if (powersave == "Off") return powersave = "On";
     return powersave = "Off";
   };
 

@@ -5,6 +5,7 @@
 
 <body>
   <span id='temp'>Temp</span>
+  <button id='powersave'>Power Save</button>
   <button id='plus'>+</button>
   <button id='minus'>-</button>
   <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
@@ -15,6 +16,7 @@
       var thermostat = new Thermostat();
 
       $('#temp').html(thermostat.defaultTemperature());
+      $('#powersave').html(thermostat.defaultPowerSave());
 
       $('#plus').click(function(){
         $('#temp').html(thermostat.increaseTemperature());
@@ -22,6 +24,10 @@
 
       $('#minus').click(function(){
         $('#temp').html(thermostat.decreaseTemperature());
+      });
+
+      $('#powersave').click(function(){
+        $('#powersave').html(thermostat.changePowerSave());
       });
 
     });
