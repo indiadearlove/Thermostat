@@ -4,5 +4,18 @@
 </html>
 
 <body>
-  20
+  <span id='temp'>Temp</span>
+  <button id='plus'>+</button>
+  <button id='minus'>-</button>
+  <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+  <script src="js/thermostat.js"></script>
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+      var thermostat = new Thermostat();
+      
+      $('#temp').html(thermostat.defaultTemperature());
+
+    });
+  </script>
 </body>
