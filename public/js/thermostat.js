@@ -22,15 +22,18 @@ var Thermostat = function () {
     return (temp -= 1);
   };
 
-  Thermostat.prototype.powerSaveOn = function(powersave) {
-    return (powersave == "On");
+  Thermostat.prototype.powerSaveOn = function() {
+    return powersave = "On";
   };
 
-  Thermostat.prototype.powerSaveOff = function(powersave) {
-    return (powersave == "Off")
+  Thermostat.prototype.powerSaveOff = function() {
+    return powersave = "Off";
   };
 
   Thermostat.prototype.setTemperature = function(giventemp) {
+    if (giventemp < 10) return temp;
+    if (powersave == "On" && giventemp > 25) return temp;
+    if (giventemp > 32) return temp;
     return (temp = giventemp);
   };
 

@@ -38,12 +38,13 @@ describe('Thermostat', function() {
     });
 
     it("can not go above 25 with power save on", function(){
-      thermostat.setTemperature(25)
+      thermostat.setTemperature(25);
       expect(thermostat.increaseTemperature("On")).toEqual(25);
     });
 
     it("can not go above 32 with power save off", function(){
-      thermostat.setTemperature(32)
+      thermostat.powerSaveOff();
+      thermostat.setTemperature(32);
       expect(thermostat.increaseTemperature("Off")).toEqual(32);
     });
 
