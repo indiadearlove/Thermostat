@@ -13,8 +13,13 @@
 
     $(document).ready(function(){
       var thermostat = new Thermostat();
-      
+
       $('#temp').html(thermostat.defaultTemperature());
+
+      $('#plus').click(function(){
+        $('#temp').html(thermostat.increaseTemperature());
+      });
+
 
     });
   </script>
