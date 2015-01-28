@@ -4,7 +4,7 @@ var Thermostat = function () {
   var powersave = "On";
 
   Thermostat.prototype.defaultTemperature = function() {
-    return temp;
+    return (temp = 20);
   };
 
   Thermostat.prototype.defaultPowerSave = function() {

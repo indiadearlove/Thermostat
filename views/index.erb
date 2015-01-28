@@ -18,6 +18,9 @@
       <button id='plus'>+</button>
       <button id='minus'>-</button>
     </br>
+    <br>
+      <button id='reset'>Reset</button>
+    </br>
     <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
     <script src="js/thermostat.js"></script>
     <script type="text/javascript">
@@ -38,6 +41,10 @@
 
         $('#powersave').click(function(){
           $('#powersave').html(thermostat.changePowerSave());
+        });
+
+        $('#reset').click(function(){
+          $('#temp').html(thermostat.defaultTemperature());
         });
 
       });
