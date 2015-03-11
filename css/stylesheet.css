@@ -24,27 +24,16 @@ span img {
   height: 100%;
 }
 
-#right {
-  float: left;
-  width: 45%;
-  height: 100%;
-  background-color: black;
-  text-align: center;
-}
-
 #contents {
   display: inline;
   float: right;
   height: 58%;
   width: 100%;
-  margin-top: 25%;
-  margin-bottom: 15%;
-  margin-right: 0.9em;
   text-align: center;
 }
 
 #energy-colour {
-  font-size: 14.5vw;
+  font-size: 200px;
   height: 45%;
 }
 
@@ -67,7 +56,7 @@ span img {
 
 #plus-minus-reset p {
   display: inline;
-  font-size: 2vw;
+  font-size: 30px;
   padding-left: 0.4em;
 }
 
@@ -78,9 +67,8 @@ span img {
 }
 
 #power-saving-mode {
-  font-size: 1.4em;
   margin: 0.3em 0.3em 0 0;
-  font-size: 1.72vw;
+  font-size: 30px;
 }
 
 .blue {
@@ -92,7 +80,7 @@ span img {
 }
 
 #holiday-mode {
-  font-size: 1.4vw;
+  font-size: 30px;
   margin: 0.3em 0.3em 0 0;
 }
 
