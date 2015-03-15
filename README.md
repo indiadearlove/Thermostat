@@ -6,11 +6,13 @@ Week 5 Project
 
 A simple interface for a digital thermostat.
 
-Testing:
+Technologies Used:
 -------
 * JavaScript
 * JQuery
 * Jasmine
+* HTML
+* CSS
 
 Specifications Complete:
 --------------
