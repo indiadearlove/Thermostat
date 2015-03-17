@@ -24,6 +24,7 @@ Specifications Complete:
 - If power saving mode is off, the maximum temperature is 32 degrees
 - Power saving mode is on by default
 - You can reset the temperature to 20 by hitting  the reset button
+- There is an away mode that put it on min temperature
 
 Specifications to be Completed:
 ------------------------------
